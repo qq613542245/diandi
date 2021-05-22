@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+    <link rel="icon" href="./favicon.ico">
+    <script type="text/javascript">
+//iOS Web APP中点击链接跳转到Safari 浏览器新标签页的问题 devework.com
+//stanislav.it/how-to-prevent-ios-standalone-mode-web-apps-from-opening-links-in-safari
+if(("standalone" in window.navigator) && window.navigator.standalone){
+    var noddy, remotes = false;
+    document.addEventListener('click', function(event) {
+        noddy = event.target;
+        while(noddy.nodeName !== "A" && noddy.nodeName !== "HTML") {
+            noddy = noddy.parentNode;
+        }
+        if('href' in noddy && noddy.href.indexOf('http') !== -1 && (noddy.href.indexOf(document.location.host) !== -1 || remotes))
+        {
+            event.preventDefault();
+            document.location.href = noddy.href;
+        }
+    },false);
+}
+</script>
+    <title>Boss - Ms 时光倒流</title>
+    <meta name="description" content="我们在一起的第一年，时间过得真的很快~">
+    <meta name="keywords" content="纪念,记录">
+    <link rel="stylesheet" type="text/css" href="./css/lovexhj.css">
+    <link rel="stylesheet" href="./css/swiper.css">
+    <link rel="stylesheet" type="text/css" href="./css/FiraCode.css">
+</head>
+
+<body>
+    <!-- 标题板块 -->
+    <div class="title">
+        <img src="./images/bg1.jpg" alt="bgGif">
+        <p id="tqyxhj"></p>
+    </div>
+
+    <!-- 分页1 - 骚话 -->
+    <div class="page page1">
+        <div class="swiper-container swiper-container-lovexhj1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="page1-lovexhj1">
+                        <img src="./images/boss.jpg" alt="yz">
+                        <img src="./images/cat.gif" alt="cat">
+                        <img src="./images/ms.jpg" alt="xf">
+                        <p>
+                            <span id="span"></span>
+<script type="text/javascript">
+    function runtime(){
+        // 初始时间，日/月/年 时:分:秒
+        X = new Date("5/17/2020 00:00:00");
+        Y = new Date();
+        T = (Y.getTime()-X.getTime());
+        M = 24*60*60*1000;
+        a = T/M;
+        A = Math.floor(a);
+        b = (a-A)*24;
+        B = Math.floor(b);
+        c = (b-B)*60;
+        C = Math.floor((b-B)*60);
+        D = Math.floor((c-C)*60);
+        //信息写入到DIV中
+        span.innerHTML = "我们在一起"+A+"天"+B+"小时"+C+"分"+D+"秒"+"啦！"
+    }
+    setInterval(runtime, 1000);
+</script>
+</p>
+                        <p>为了可以记录我们美好的点点滴滴</p>
+                        <p>就写一点好玩的代码送给你~</p>
+                        <span class="right">往左划动 ←</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="page1-lovexhj1">
+                        <img class="cat" src="./images/cat2.gif" alt="cat2">
+                        <p class="catText">你常对我发的表情 ↑</p>
+                        <p>上次也是花心思写了一个给你</p>
+                        <p>但我觉得整体设计和界面都过于<b>Low</b></p>
+                        <p>那就重新设计一个~</p>
+                        <span class="right">再划一下 ←</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="page1-lovexhj1">
+                        <img class="cat" src="./images/cat3.gif" alt="cat3">
+                        <p class="catText">扑倒你 ↑</p>
+                        <p>这次<b>超级+</b></p>
+                        <p>认真的写了一遍</p>
+                        <p style="font-size: 13px;">以<span style="color: red; font-size: 16px;">Love</span>为核心设计
+                        </p>
+                        <span class="right">再划一次吧 ←</span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="page1-lovexhj1">
+                        <img class="cat" src="./images/cat4.gif" alt="cat4">
+                        <p class="catText">挠你 ↑</p>
+                        <p>这次应该不会太难看了</p>
+                        <p>希望你喜欢</p>
+                        <span style="color: pink;">爱你 (๑′ᴗ‵๑)</span></b>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-lovexhj1"></div>
+        </div>
+    </div>
+
+    <!-- 分页2 - 时间轴 -->
+    <div class="page page2">
+        <div class="swiper-container swiper-container-lovexhj2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="page2-box">
+                        <img src="./images/page-2-11.jpg" alt="page2-1">
+                        <p><b>故事的开始</b></p>
+                        <p>2020-05-17</p>
+                        <p>我们的故事，从此开始</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="page2-box">
+                        <img src="./images/page-2-21.jpg" alt="page2-2">
+                        <p><b>第一次去武功山旅游</b></p>
+                        <p>我们努力爬上山顶</p>
+                      <p>一起晒太阳看云海~</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="page2-box">
+                        <img src="./images/page-2-31.jpg" alt="page2-3">
+                        <p><b>第一次去定三毛吃烧烤</b></p>
+                        <p>这是我们第一次坐火车去岳阳</p>
+                        <p>点了龙虾和羊排吃得不亦乐乎！</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="page2-box">
+                         <img src="./images/page-2-41.jpg" alt="page2-4">
+                        <p><b>第一次买福利彩票</b></p>
+                        <p>那天下着小雨，买了50注双色球</p>
+                        <p>开奖前还一直幻想中了怎么花？</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="page2-box">
+                         <img src="./images/page-2-51.jpg" alt="page2-5">
+                        <p><b>第一次看在线演唱会</b></p>
+                        <p>一起看五月天的在线演唱会</p>
+                        <p>买了很多吃的，看到很晚~</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="page2-box">
+                         <img src="./images/page-2-61.jpg" alt="page2-6">
+                        <p><b>第一次抓到大娃娃</b></p>
+                        <p>在城市英雄买了很多游戏币</p>
+                        <p>抓到了一只大熊，你说你很喜欢！</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="page2-box">
+                       <img src="./images/page-2-71.jpg" alt="page2-7">
+                        <p><b>第一次坐地铁</b></p>
+                        <p>这是我们第一次一起坐地铁</p>
+                        <p>没有座位，站着呆一起也很幸福~</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="page2-box">
+                         <img src="./images/page-2-81.jpg" alt="page2-8">
+                        <p><b>第一次过教师节</b></p>
+                        <p>你送了一幅定制的教师节横幅</p>
+                        <p>特别的横幅，把我笑岔了气！</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="page2-box">
+                        <img src="./images/page-2-91.jpg" alt="page2-9">
+                        <p>篇幅有限，最后丢一张丑照~</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination swiper-pagination-lovexhj2"></div>
+        </div>
+    </div>
+
+    <!-- 分页4 - 结尾 -->
+    <div class="page page4">
+        <div class="page4-box">
+            <div class="page4-img">
+                <div class="swiper-container swiper-container-lovexhj3">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/page-4-1.jpg" alt="page-4-1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/page-4-2.jpg" alt="page-4-2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./images/page-4-3.jpg" alt="page-4-3">
+                        </div>
+                         <div class="swiper-slide">
+                            <img src="./images/page-4-6.jpg" alt="page-4-6">
+                         </div>
+                         <div class="swiper-slide">
+                            <img src="./images/page-4-7.jpg" alt="page-4-7">
+                        </div>
+                         <div class="swiper-slide">
+                            <img src="./images/page-4-8.jpg" alt="page-4-8">
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev swiper-button-prev-lovexhj3"></div>
+                    <div class="swiper-button-next swiper-button-next-lovexhj3"></div>
+                </div>
+            </div>
+            <div class="page4-text">
+                <center><h1>Send To Future</h1>
+                <p>有你在的每一天都如糖果一样甜</p>
+                <a href="https://www.lovems.top/1314/" class="blog">情书一封</a><a href="https://www.lovems.top/" class="blog">我们的点滴</a></center>
+            </div>
+        </div>
+        
+        </div>
+    </div>
+
+    <!--pig-->
+    <div class="xhjIsPig">
+        <img src="./images/pig1.gif" alt="pig1" class="pig1">
+        <img src="./images/pig2.gif" alt="pig2" class="pig2">
+    </div>
+
+    <!-- js加载 -->
+    <script src="https://cdn.bootcss.com/wow/1.1.2/wow.js"></script>
+    <script src="./js/typeit.min.js"></script>
+    <script src="./js/swiper-3.4.2.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.0/jquery.js"></script>
+
+    <script src="./js/talk.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/su.js"></script>
+    <script>
+        (function () {
+            new WOW().init()
+        })()
+    </script>
+
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $('body').wpSuperSnow({
+                flakes: ['./images/004.png', './images/003.png', './images/002.png',
+                    './images/001.png'
+                ],
+                totalFlakes: '100',
+                zIndex: '999999',
+                maxSize: '30',
+                maxDuration: '20',
+                useFlakeTrans: false
+            });
+        });
+    </script>
+</body>
+
+</html>
