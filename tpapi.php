@@ -1,6 +1,6 @@
 <?php 
 //取得文件夹中图片数组 
-$img_array = glob("https://cdn.jsdelivr.net/gh/qq613542245/diandi@main/manifest/*/*.{gif,jpg,png}",GLOB_BRACE); 
+$img_array = glob("https://cdn.jsdelivr.net/gh/qq613542245/diandi@main/manifest/*.{gif,jpg,png}",GLOB_BRACE); 
 //从数组中选择一个随机图片 
 $img = array_rand($img_array); 
 //在页面显示图片 
