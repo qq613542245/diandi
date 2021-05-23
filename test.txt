@@ -1,6 +1,0 @@
-https://cdn.jsdelivr.net/gh/qq613542245/diandi@main/manifest/1.jpg
-https://cdn.jsdelivr.net/gh/qq613542245/diandi@main/manifest/2.jpg
-https://cdn.jsdelivr.net/gh/qq613542245/diandi@main/manifest/3.jpg
-https://cdn.jsdelivr.net/gh/qq613542245/diandi@main/manifest/4.jpg
-https://cdn.jsdelivr.net/gh/qq613542245/diandi@main/manifest/5.jpg
-https://cdn.jsdelivr.net/gh/qq613542245/diandi@main/manifest/6.jpg
